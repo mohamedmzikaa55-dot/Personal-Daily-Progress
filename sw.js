@@ -2,14 +2,14 @@
 // VERSION is replaced at build time (vite.config.js) with a unique build id,
 // e.g. 'daily-report-2026-09-28T...'. A new byte-different sw.js makes the
 // browser install the new worker automatically — no reinstall needed.
-const VERSION = 'daily-report-2026-11-06T21-05-46-mw5grsus'
+const VERSION = 'daily-report-2026-11-06T22-31-39-mw5ju94s'
 const CACHE = VERSION.indexOf('__APP_') === 0 ? 'daily-report-v1' : VERSION
 // Hashed vite assets are injected at build time (vite.config.js) so the whole
 // app shell — JS + CSS — is cached on install. Without this, the bundle is
 // only cached at runtime, which requires a page load that happens while the
 // SW already controls the page; first visits (or a suppressed
 // post-install reload) would leave nothing to serve offline.
-const ASSETS_RAW = '["./assets/index-CVmHgxiM.css","./assets/index-DkhhYGnq.js"]'
+const ASSETS_RAW = '["./assets/index-CVGSwH1a.css","./assets/index-D3cno2VB.js"]'
 let PRECACHE_ASSETS = []
 try {
   PRECACHE_ASSETS = ASSETS_RAW.indexOf('__PRECACHE_') === 0 ? [] : JSON.parse(ASSETS_RAW)
