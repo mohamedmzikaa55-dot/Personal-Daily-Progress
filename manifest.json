@@ -1,6 +1,6 @@
 {
-  "name": "Daily Report",
-  "short_name": "Daily Report",
+  "name": "Second Mind",
+  "short_name": "Second Mind",
   "description": "Record daily habits and tasks, then score points for each day.",
   "start_url": "./",
   "scope": "./",
